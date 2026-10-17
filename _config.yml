@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "About me"
+title                    : "Nicola Luigi Bragazzi"
 title_separator          : "-"
 name                     : &name "Nicola Luigi Bragazzi"
 description              : &description "Medical Doctor, Infectious Disease Modeller"
 url                      : https://nicolabragazzi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "nicolabragazzi.github.io"
+repository               : "nicolabragazzi/nicolabragazzi.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -81,8 +81,9 @@ author:
   name             : "Nicola Luigi Bragazzi"
   avatar           : "profile_nico.jpeg"
   bio              : "Medical Doctor, PhD, Mathematical Modeller and Data Scientist."
-  location         : "Ontario"
-  employer         : "York University"
+  # Location of the current institutional affiliation, not a residential address.
+  location         : "Kigali, Rwanda"
+  employer         : "AIMS Research and Innovation Centre (AIMS RIC)"
   googlescholar    : "https://scholar.google.com/citations?user=sTIzwwEAAAAJ"
   email            : "robertobragazzi@gmail.com"
   uri              :
@@ -97,8 +98,8 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "Nicola Luigi Bragazzi"
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         :
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -116,8 +117,18 @@ author:
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
+  # Inherited content whose attribution has not been verified. Keep in Git,
+  # but exclude both collection pages and downloadable legacy assets.
+  - _publications
+  - _projects
+  - _talks
+  - _teaching
+  - files
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - docs
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
